@@ -18,9 +18,9 @@ fi
 
 # Set variables.
 TIMESTAMP=$(date +"%F-%T")
-LOG_DIR="/var/log/ansible_install"
-LOG_FILE="${LOG_DIR}/setup-${TIMESTAMP}.log"
-TEMP_LOG_FILE='setup.log'
+LOG_DIR="/var/log"
+LOG_FILE="${LOG_DIR}/install_ansible-${TIMESTAMP}.log"
+TEMP_LOG_FILE='install_ansible.log'
 
 OPTIONS=""
 
