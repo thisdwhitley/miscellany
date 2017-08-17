@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # This script installs Ansible on a variety of OSes.  Taken from Tower install.
 #
-# It can be called remotely...
+# It can be called remotely:
+#   wget -qO- https://raw.githubusercontent.com/dswhitley/miscellany/master/install_ansible.sh | /bin/bash
 
 # -------------
 # Initial Setup
