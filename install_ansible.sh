@@ -194,18 +194,4 @@ else
     log_success "The setup process completed successfully."
 fi
 
-# Save log file.
-if [ -d "${LOG_DIR}" ]; then
-    sudo cp ${TEMP_LOG_FILE} ${LOG_FILE}
-    if [ $? -eq 0 ]; then
-        sudo rm ${TEMP_LOG_FILE}
-    fi
-    log_success "Setup log saved to ${LOG_FILE}"
-else
-    log_warning <<-EOF
-		${LOG_DIR} does not exist.
-		Setup log saved to ${TEMP_LOG_FILE}.
-		EOF
-fi
-
 exit ${RC}
