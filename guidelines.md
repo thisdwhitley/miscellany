@@ -19,13 +19,13 @@ Also note that this is largely personal.
   * Module usage
   * Playbook formatting
   * Whitespaces
-* References
+* [References](#references)
 
 ## <a name="ansible"></a>Ansible
 I hope I refer to this often, or at least until it becomes second nature.
 ### <a name="maximum_line_length"></a>Maximum line length
 
-
+## <a name="references"></a>References
 * [openshift-ansible Style Guide](https://github.com/openshift/openshift-ansible/blob/master/docs/style_guide.adoc)
 * [Ansible - Best Practices](http://docs.ansible.com/ansible/latest/playbooks_best_practices.html)
 * [Ansible Best Practices: The Essentials](https://www.ansible.com/blog/ansible-best-practices-essentials)
