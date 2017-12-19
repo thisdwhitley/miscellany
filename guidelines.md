@@ -26,7 +26,8 @@ I hope I refer to this often, or at least until it becomes second nature.
 ### <a name="maximum_line_length"></a>Maximum line length
 ---
 Ansible relies heavily on Python, so I will borrow from [Pep8](https://www.python.org/dev/peps/pep-0008/#maximum-line-length):
-#### All lines *SHOULD* be no longer than 80 characters
+> All lines *SHOULD* be no longer than 80 characters
+
 Every attempt SHOULD be made to comply with this soft line length limit, and only when it makes the code more readable should this be violated.
 
 Code readability is subjective...
