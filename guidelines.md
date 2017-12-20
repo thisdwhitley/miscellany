@@ -48,7 +48,11 @@ This includes variables files that are in the Yaml format.
 Because Ansible uses Jinja for templating... .j2
 
 ---
-### 1.3 Variable names
+### 1.3 Variables
+#### 1.3.1 CLI variables
+#### 1.3.2 global variables
+#### 1.3.3 role variables
+#### 1.3.4 encrypted/vault variables
 
 ---
 ### 1.4 Module usage
@@ -67,4 +71,5 @@ Every attempt SHOULD be made to use modules currently supported by the core team
 ## 2 References
 * [openshift-ansible Style Guide](https://github.com/openshift/openshift-ansible/blob/master/docs/style_guide.adoc)
 * [Ansible - Best Practices](http://docs.ansible.com/ansible/latest/playbooks_best_practices.html)
+* [Ansible - YAML Syntax](http://docs.ansible.com/ansible/latest/YAMLSyntax.html)
 * [Ansible Best Practices: The Essentials](https://www.ansible.com/blog/ansible-best-practices-essentials)
