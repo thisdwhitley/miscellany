@@ -15,7 +15,7 @@ Also note that this is largely personal.
 * [1 Ansible](#1-ansible)
   * [1.1 Maximum line length](#11-maximum-line-length)
   * [1.2 File extensions](#12-file-extensions)
-  * 1.3 Variable names
+  * 1.3 Variables
   * [1.4 Module usage](#14-module-usage)
   * 1.5 Playbook formatting
   * 1.6 Whitespaces
@@ -65,7 +65,12 @@ Every attempt SHOULD be made to use modules currently supported by the core team
 ### 1.5 Playbook formatting
 
 ---
-### 1.6 Whitespaces
+### 1.6 Indentation
+
+---
+### 1.7 Booleans
+#### 1.7.1 Booleans *SHOULD* be "true" or "false"
+Ansible allows you to specify a boolean value (true/false) in several forms.  In general, values of **true** and **false** SHOULD be used unless it reads awkwardly.
 
 ---
 ## 2 References
