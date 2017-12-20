@@ -19,6 +19,7 @@ Also note that this is largely personal.
   * [1.4 Module usage](#14-module-usage)
   * 1.5 Playbook formatting
   * 1.6 Whitespaces
+  * [1.7 Booleans](#17-booleans)
 * [2 References](#2-references)
 ---
 ## 1 Ansible
