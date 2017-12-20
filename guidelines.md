@@ -21,7 +21,7 @@ Also note that this is largely personal.
   * 1.6 Whitespaces
 * [2 References](#2)
 ---
-## <a name="1"></a>Ansible
+## <a name="1"></a>1 Ansible
 I hope I refer to this often, or at least until it becomes second nature.
 
 ---
@@ -44,7 +44,7 @@ Ansible tooling (like `ansible-galaxy init`) create files with a .yml extension.
 
 This includes variables files that are in the Yaml format.
 
-#### 1.2.2 template files
+#### 1.2.2 All template files *MUST* have a .j2 extension
 Because Ansible uses Jinja for templating... .j2
 
 ---
@@ -52,6 +52,10 @@ Because Ansible uses Jinja for templating... .j2
 
 ---
 ### <a name="1.4"></a>1.4 Module usage
+#### 1.4.1 All modules *SHOULD* be supported
+Every attempt SHOULD be made to use modules currently supported by the core team.  This list is ever changing so this will be difficult.  Additionally, there will just be times when this is not possible.
+
+> [Modules Maintained by the Ansible Core Team](http://docs.ansible.com/ansible/latest/core_maintained.html)
 
 ---
 ### <a name="1.5"></a>1.5 Playbook formatting
