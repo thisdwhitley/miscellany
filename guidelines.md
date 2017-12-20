@@ -12,14 +12,14 @@ historically fails as I learn more and adopt different techniques...).
 Also note that this is largely personal.
 
 ## Table of Contents
-* 1 [Ansible](#1)
-  * 1.1 [Maximum line length](#1.1)
-  * 1.2 [File extensions](#1.2)
+* [1 Ansible](#1)
+  * [1.1 Maximum line length](#1.1)
+  * [1.2 File extensions](#1.2)
   * 1.3 Variable names
   * 1.4 Module usage
   * 1.5 Playbook formatting
   * 1.6 Whitespaces
-* 2 [References](#2)
+* [2 References](#2)
 
 ## <a name="1"></a>Ansible
 I hope I refer to this often, or at least until it becomes second nature.
