@@ -1,0 +1,39 @@
+---
+- name: test the location based on dsnleaktest
+  hosts: localhost
+  vars:
+    testUrl: "https://dnsleaktest.com"
+    badLocation: "Raleigh"
+    maxTries: "5"
+    sleepTime: "5"
+    internetTest: "8.8.8.8"
+    logFile: "/root/vpn.log"
+    restartVpnCmd: ""
+    tries: "0"
+
+  tasks:
+    - name: grab {{ testUrl }} from endpoint perspective
+      uri:
+        url: "{{ testUrl }}"
+        return_content: yes
+      register: testpage
+
+    - name: this block is used when {{ badLocation }} is found
+      block:
+        - name: output the testpage
+          debug:
+            msg: "the bad location [{{ badLocation }}] was found" 
+        - name: restart the vpn service
+          debug:
+            msg: "I need to restart the VPN service and basically restart this whole playbook"
+#      until: "badLocation in testpage.content"
+      when: "badLocation in testpage.content"
+    
+#    - name: save the location for testing later
+#      set_fact:
+#        location: "{{ testpage.content | regex_search('(from.*,)') }}"
+
+#    - name: output the location
+#      debug:
+#        var: location
+#        verbosity: 2
