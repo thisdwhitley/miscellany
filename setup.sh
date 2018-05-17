@@ -73,27 +73,6 @@ main() {
 
 }  ##> end of main() -----------------------------------------------------------
 
-
-## unzip_strip() function ##+++++++++++++++++++++++++++++++++++++++++++++++++++#
-# Unzip a zip file and remove the initial directory while putting it in the 
-# destination directory.  The unzip command will overwrite existing directories.
-#  ARGUMENTS:  zipFile.zip destinination.folder
-#  EXAMPLE: print_populated develop.zip roles
-#  RETURNS: N/A
-#  REFERENCE:  https://superuser.com/a/573624
-unzip_strip() {
-    local zip=$1
-    local dest=${2:-.}
-    local temp=$(mktemp -d) && unzip -o -q -d "$temp" "$zip" && mkdir -p "$dest" &&
-    shopt -s dotglob && local f=("$temp"/*) &&
-    if (( ${#f[@]} == 1 )) && [[ -d "${f[0]}" ]] ; then
-        mv "$temp"/*/* "$dest"
-    else
-        mv "$temp"/* "$dest"
-    fi && rmdir "$temp"/* "$temp"
-} ##> end of unzip_strip() -----------------------------------------------------
-
-
 is_ansible_installed() {
     type -p ansible-playbook > /dev/null
 }
