@@ -25,8 +25,6 @@
 #             -r "https://privateuser@gitlab.com/privateuser/privaterepo.git" \
 #             -b develop \
 #             -p local
-
-
 ## these global variables can be used throughout ##++++++++++++++++++++++++++++#
 REPO=""
 BRANCH=""
